@@ -1,0 +1,76 @@
+@import _animations.sass
+//Fonts
+$Body: 'Nunito Sans', sans-serif
+$Header: 'League Spartan', sans-serif
+//Fonts
+
+h1,h2,h3,h4,h5,h6
+  font-family: $Header
+  font-weight: 800
+
+body
+  font-family: $Body
+  font-weight: 300
+
+.content
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: row
+.flex-item
+  margin: 2rem
+
+//    Content Area styles
+.contentArea
+  display: grid
+  grid-gap: 1.2rem
+  grid-template-columns: repeat(6, 1fr)
+.item
+  margin: 1.2rem
+  border-radius: 10px
+  padding: 1rem 1.2rem
+  animation-name: PopUp
+  animation-duration: .5s
+  background: lightcyan
+  transition: background .5s ease-out
+//Already added styles
+.red
+  background: crimson
+  transition: background .5s ease-out
+//Show contacts styles
+.bounce
+  animation-name: Bounce
+  animation-duration: .5s
+
+//Forms styles
+.inputArea
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+.hidden
+  visibility: hidden
+.visible
+  visibility: visible
+
+//removed items styles
+.removed
+  display: none
+
+//Menu styles
+.flex-item-horizontal
+  display: flex
+  flex-direction: row
+.fa-2x
+  margin: 0 1.2rem
+
+//input styles
+input
+  border: none
+  width: 10%
+  border-bottom: 1px solid black
+  transition: width .2s ease-out
+  &:hover, &:focus
+    outline: none
+    width: 12%
+    transition: width .2s ease-out

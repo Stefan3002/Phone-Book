@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phone Book</title>
+<!--    Font awesome-->
+    <script src="https://kit.fontawesome.com/4ef2199138.js" crossorigin="anonymous"></script>
+<!--    Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;800&family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+<!--    My style-->
+    <link rel="stylesheet" href="style.css">
+<!--    Scripts-->
+    <script defer src="script.js"></script>
+</head>
+<body>
+<header>
+    <h1>Phone Book</h1>
+    <h2>Manage your phone book.</h2>
+</header>
+<main>
+    <div class="content">
+        <div class="flex-item menu">
+            <div class="add flex-item-horizontal">
+                <i class="add fa-2x fa-solid fa-plus"></i>
+                <h3 class="add">Add contact.</h3>
+            </div>
+            <div class="remove flex-item-horizontal">
+                <i class="remove fa-2x fa-solid fa-trash-can"></i>
+                <h3 class="remove">Delete contact.</h3>
+            </div>
+            <div class="show flex-item-horizontal">
+                <i class="show fa-2x fa-solid fa-magnifying-glass"></i>
+                <h3 class="show">Find contact.</h3>
+            </div>
+            <div class="current flex-item-horizontal"></div>
+        </div>
+        <div class="flex-item contentArea"></div>
+    </div>
+    <div class="inputArea hidden">
+        <h3>First name: </h3>
+        <input type="text">
+        <h3>Last name: </h3>
+        <input type="text">
+        <h3>Phone: </h3>
+        <input type="number">
+    </div>
+
+</main>
+<footer>
+
+</footer>
+</body>
+</html>
